@@ -217,7 +217,7 @@ class FinancialHealthVisual {
     new Position(DateTime.parse("2017-01-11"), 0.946597),
     new Position(DateTime.parse("2017-01-12"), 0.946597),
     new Position(DateTime.parse("2017-01-13"), 0.946597),
-    new Position(DateTime.parse("2017-01-14"), 0.946597),
+    new Position(DateTime.parse("2017-01-15"), 0.946597),
   ];
 
   TimelineVisual Initialize(DateTime startDate, num days) {  
