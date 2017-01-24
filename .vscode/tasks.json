@@ -2,7 +2,7 @@
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "0.1.0",
-    "command": "C:\\Apps\\dart-sdk\\bin\\pub.bat",
+    "command": "C:\\Program Files\\Dart\\dart-sdk\\bin\\pub.bat",
     "isShellCommand": true,
     "args": [],
     "showOutput": "always",

@@ -5,7 +5,7 @@ import 'dart:math';
 import 'dart:html';
 
 class Renderer {
-  static final num absoluteWidth = 8192;
+  static final num absoluteWidth = 7680;
   static final num scaledWidth = 1024;
   static final num horizontalMultiplier = absoluteWidth / scaledWidth;
   static final num horizontalScaling = scaledWidth / absoluteWidth;
