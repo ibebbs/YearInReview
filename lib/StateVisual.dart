@@ -59,7 +59,7 @@ class StateVisual {
     new State(new DateTime(2016, 11, 3), new DateTime(2016, 11, 7), "Holiday", "Visiting Dublin, Ireland", Holiday),
     new State(new DateTime(2016, 11, 8), new DateTime(2016, 12, 21), "OneCog.Solutions", "OneCog Solutions", OneCog),
     new State(new DateTime(2016, 12, 22), new DateTime(2017, 1, 3), "Holiday", "Xmas and New Years", Holiday),
-    new State(new DateTime(2017, 1, 4), new DateTime(2017, 1, 15), "OneCog.Solutions", "OneCog Solutions", OneCog),
+    new State(new DateTime(2017, 1, 4), new DateTime(2017, 1, 14), "OneCog.Solutions", "OneCog Solutions", OneCog),
   ];
   
   static final TextStyle LabelTextStyle = new TextStyle(font: "9pt Arial", fill: new Colour.fromInt(0x000000));
@@ -69,7 +69,7 @@ class StateVisual {
 
     DateTime currentDate = startDate;
 
-    while (days > 0) {
+    while (days > 1) {
       State state = States.firstWhere((s) => s.Contains(currentDate));
       num stateDays = min(days, state.To.difference(currentDate).inDays + 1);
 
