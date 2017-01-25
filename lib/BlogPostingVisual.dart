@@ -51,7 +51,7 @@ class BlogPostingVisual {
 
     Graphics graphics = new Graphics();
     graphics.position = new Point(LayoutConstants.HorizontalMargin, 0);
-    graphics.beginFill(new Colour.fromInt(0x5AC8FD));
+    graphics.beginFill(new Colour.fromInt(0xFFBF18));
 
     DateTime maxDate = startDate.add(new Duration(days: days));
 

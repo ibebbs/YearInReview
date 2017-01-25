@@ -8,7 +8,7 @@ import 'dart:html';
 class LinearCalendarVisual {  
   static final List<String> _months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
   static final num top = 0;
-  static final num height = 40;
+  static final num height = 16;
 
 	CanvasElement _canvas = new CanvasElement();
   CanvasRenderingContext2D _context	= null;
@@ -45,14 +45,14 @@ class LinearCalendarVisual {
  
     Graphics graphics = new Graphics();
 
-    graphics.lineStyle(3, LayoutConstants.Foreground, 1.0);
-    graphics.moveTo(LayoutConstants.HorizontalMargin, top + height / 2);
-    graphics.lineTo(LayoutConstants.HorizontalMargin + (days * LayoutConstants.DayWidth), top + height / 2);
+    graphics.lineStyle(2, LayoutConstants.Foreground, 1.0);
+    graphics.moveTo(LayoutConstants.HorizontalMargin - 1, 0);
+    graphics.lineTo(LayoutConstants.HorizontalMargin + (days * LayoutConstants.DayWidth), 0);
 
     for (num day = 0; day <= days; day++) {
       DateTime date = startDate.add(new Duration(days: day));
       num vp = day % 7 == 0 ? 0 : 8;
-      graphics.moveTo(LayoutConstants.HorizontalMargin + (day * LayoutConstants.DayWidth), top + vp);
+      graphics.moveTo(LayoutConstants.HorizontalMargin + (day * LayoutConstants.DayWidth), 0);
       graphics.lineTo(LayoutConstants.HorizontalMargin + (day * LayoutConstants.DayWidth), top + height - vp);
       String dateString = date.day.toString();
       var dateText = new CanvasText(dateString, _dateTextStyle);      
