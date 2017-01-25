@@ -10,9 +10,9 @@ class Renderer {
   static final num horizontalMultiplier = absoluteWidth / scaledWidth;
   static final num horizontalScaling = scaledWidth / absoluteWidth;
   static final num vertialScaling = 1;
-  static final num height = 210;
+  static final num height = 228;
   static final num focusWidth = 400;
-  static final num focusHeight = 210;
+  static final num focusHeight = 228;
   static final num maxFocusLeft = absoluteWidth - focusWidth;
   static final num maxLeft = scaledWidth - focusWidth;
 
